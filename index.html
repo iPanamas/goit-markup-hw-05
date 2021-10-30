@@ -54,11 +54,11 @@
         </div> <!-- container -->
         </div> <!-- container -->
     </header> <!-- header -->
-    <main>
+    <main class="main">
         <section class="content">
             <div class="container">
                 <h1 class="content-title">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="content-btn"><span>Заказать услугу</span></button>
+                <button type="button" class="content-btn" data-modal-open><span>Заказать услугу</span></button>
             </div> <!-- container -->
         </section> <!-- content -->
         <!-- skills -->
@@ -339,6 +339,15 @@
                 </ul>
             </div> <!-- container -->
         </section> <!-- section -->
+        <div class="backdrop" data-modal>
+            <div class="modal">
+                <button type="button" class="modal-close" data-modal-close>
+                    <svg class="icon-close">
+                        <use href="./img/icons/sprite/sprite.svg#icon-close"> </use>
+                    </svg>
+                </button>
+            </div>
+        </div>
     </main>
     <!-- footer -->
     <footer class="footer">
@@ -395,6 +404,7 @@
             </div>
         </div> <!-- container -->
     </footer> <!-- footer -->
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
