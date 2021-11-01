@@ -531,6 +531,7 @@ color: var(--primary-text-color);
     height: 100%;
 
     background-color: rgba(0, 0, 0, 0.2);
+    transition: opacity 250ms linear, visibility 250ms linear;
 }
 
 .modal{
@@ -538,7 +539,6 @@ color: var(--primary-text-color);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
 
     width: 528px;
     height: 581px;
@@ -548,16 +548,25 @@ color: var(--primary-text-color);
 }
 
 .icon-close{
-    width: 30px;
-    height: 30px;
+    width: 18px;
+    height: 18px;
 }
 
 .modal-close{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    border-radius: 50%;
+
     position: absolute;
     right: 8px;
     top: 8px;
-    background-color: transparent;
-    border: transparent;
     cursor: pointer;
 }
 
